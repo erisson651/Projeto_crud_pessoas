@@ -7,7 +7,7 @@
 }
 
 h3{
-    text-align: 100%;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: black;
@@ -21,7 +21,7 @@ h3{
     color: aliceblue;
 }
 
-form-pessoa{
+#form-pessoa{
     padding: 15px;
     font-size: 1.2em;
 }
