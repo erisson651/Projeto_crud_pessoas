@@ -1,3 +1,5 @@
+//IMPORTANDO ARQUIVO
+import {calcDesconto} from './scripts_calculos.js'
 //PEGANDO ELEMENTOS DOM
 const formPessoa = document.querySelector('#form-pessoa')
 const divLista = document.querySelector('#div-lista-pessoas')
@@ -44,6 +46,7 @@ const listPessoas = () => {
     divLista.innerHTML = ''
     //PECORRER ARRAY pessoas COM O foreach
     pessoas.forEach((elem, i) => {
-        divLista .innerHTML += `${i} - ${elem.nome} - ${elem.idade}, ${elem.renda} <br>`
+        divLista .innerHTML += `${i} - ${elem.nome} 
+        - ${elem.idade}, ${parseFloat(elem.renda).toFixed('.',',')} - ${calcDesconto(elem)}<br>`
     })
 }
